@@ -74,6 +74,15 @@ Implement parallel RMHC to optimize multiple knapsacks simultaneously.
 
 Compare performance with Simulated Annealing or Genetic Algorithms.
 
+## 📊 Experimental Results
+
+| **Configuration** | **# Knapsacks** | **# Items** | **# Dimensions** | **Feasibility** | **Total Value Reached** | **Observation** |
+|-------------------|----------------:|-------------:|-----------------:|----------------:|------------------------:|-----------------|
+| **Problem 1** | 3 | 20 | 2 | ✅ All items selected |  **1,065** | The constraints are large enough to allow all items to fit in the knapsacks. |
+| **Problem 2** | 10 | 100 | 10 | ⚠️ Partial selection | ≈ **39,000** | The algorithm converges to a near-optimal configuration with slightly submaximal total value. |
+| **Problem 3** | 100 | 5,000 | 100 | ⚠️ Partial selection | ≈ **1,450,000** | Despite the high dimensionality, RMHC achieves strong performance with values close to the feasible optimum. |
+
+
 🧾 Author
 
 Giorgio Galasso
